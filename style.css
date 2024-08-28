@@ -1,0 +1,154 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    line-height: 1.5;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 650px;
+    height: 500px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: row;
+    /* border-radius: 8px; */
+}
+
+.container .left-side {
+    width: 50%;
+    height: 100%;
+}
+
+.container .left-side .first-img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.container .right-side {
+    height: 90%;
+    width: 50%;
+    padding: 25px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container .right-side h4 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 14%, 65%);
+}
+
+.container .right-side h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: hsl(212, 21%, 14%);
+}
+
+.container .right-side h1 span {
+    margin-right: 80px;
+}
+
+.container .right-side p {
+    color: hsl(228, 14%, 65%);
+}
+
+.container .right-side .price {
+    margin-top: 20px;
+}
+
+.container .right-side .price .first-span {
+    font-size: 35px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+
+.container .right-side .price .second-span {
+    vertical-align: 8px;
+    text-decoration: line-through;
+    color: hsl(228, 14%, 65%);
+}
+
+.container .right-side .last-field {
+    font-size: 20px;
+    margin-top: 32px;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+}
+
+.container .right-side .last-field img {
+    width: 18px;
+    height: 18px;
+}
+
+.container .right-side .last-field:hover {
+    background-color: hsl(159, 40%, 22%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:648px) {
+    .container {
+        margin-top: 400px;
+        width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container div.left-side {
+        width: 100%;
+        height: 50%;
+        /* background-image: url('./images/image-product-mobile.jpg'); */
+    }
+
+    .container .left-side .first-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+    .container .right-side {
+        width: 90%;
+        height: 50%;
+        border-radius: 0 0 8px 8px;
+        margin: -6px 0 20px;
+        padding: 18px;
+    }
+
+    .container .right-side h1 {
+        font-size: 30px;
+    }
+
+    .container .right-side h1 span {
+        margin-right: 150px;
+    }
+
+    .attribution {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
